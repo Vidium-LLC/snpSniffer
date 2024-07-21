@@ -4,7 +4,7 @@ Tool for checking genotype concordance between multiple assays
 
 This tools was developed by Venkata "Teja" Yellapantulla as part of his PhD thesis work in the Keats Lab at Translational Genomics Research Institute.
 
-This tool is maintained by Salvatore Facista (TGen - Lab of Dr. William Hendricks) in 2019. The tool will now function with custom .ini files, generated with any number of SNPs. Please submit bug reports via Github.
+This tool is maintained by TGen in 2024 (with help from contributors). The tool will now function with custom .ini files, generated with any number of SNPs. Please submit bug reports via Github.
 
 ## Wrapper Usage - Assumes Genotyping is already Complete 
 Change Dir into the Folder where the Projects are, and run one of the following commands: 
@@ -142,6 +142,8 @@ Samtools (includes BCFtools - do not use outdated stand-alone BCFtools).
 		20 are often still valuable but can have false positives
 		
 ## UPDATE NOTES:
+20240720 - Updated Readme.md to properly attribute maintenance to TGen (primary user). 
+
 20240304 - Updated the Het.java class to eliminate a typo causing the tool not to count "CA" hets. This corresponds to this issue: https://github.com/tgen/snpSniffer/issues/19 . The tool was recompiled under a JDK 1.8 (8). The .jar file was updated.
 
 20200214 - Changed main class name to exclude version number. Added more verbose main method argument error message. Added -version option. Changed the Genotype class to recognize the format "0/0" as a homozygous reference. Previously, "0" was expected for homozygous reference. Renamed internal classes to exclude version number.
